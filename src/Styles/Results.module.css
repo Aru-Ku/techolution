@@ -1,0 +1,32 @@
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.table {
+	width: 100%;
+	border-radius: 0;
+	margin-top: 15px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+}
+
+.table h3 {
+	margin: 0;
+	padding: 0 10px;
+	font-weight: bold;
+	border-radius: 0;
+	border: 1px solid #000000;
+}
+
+@media screen and (max-width: 700px) {
+	.wrapper {
+		width: 95%;
+		margin-top: 30px;
+	}
+	.table h3 {
+		font-size: 16px;
+		padding: 0 5px;
+	}
+}
