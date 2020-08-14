@@ -34,7 +34,7 @@ export default function Admission() {
 			if (fName && lName && clss && year && percentage) {
 				e.preventDefault();
 				setLoading(true);
-				await fetch("/admissions.json", {
+				await fetch("https://techolution-db.firebaseio.com/admissions.json", {
 					method: "POST",
 					body: JSON.stringify({ firstName: fName, lastName: lName, class: clss, year, percentage }),
 				})

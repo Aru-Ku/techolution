@@ -45,7 +45,7 @@ export default function Results() {
 
 	useEffect(() => {
 		(async () => {
-			await fetch("/marks.json")
+			await fetch("https://techolution-db.firebaseio.com/marks.json")
 				.then((res) => res.json())
 				.then((data) => modifyResults(data))
 				.catch(() => alert("Error"));
